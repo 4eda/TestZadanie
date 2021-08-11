@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/Forma', function () {
     return view('Forma');
 })->name('Forma');
 
@@ -19,7 +19,7 @@ Route::get('/Users', function () {
     return view('Users');
 })->name('Users');
 
-Route::get('/Main', function () {
+Route::get('/', function () {
     return view('Main');
 })->name('Main');
 
@@ -27,5 +27,5 @@ Route::get ('/Users', 'FormaController@allData')->name('users-data');
 Route::get ('/Users/{id}/delete', 'FormaController@deleteOne')->name('delete-one');
 Route::post('/Forma/submit', 'FormaController@submit')->name('forma-form');
 
-Route::get ('/Main', 'newsController@allData')->name('news-data');
+Route::get ('/', 'newsController@allData')->name('news-data');
 Route::get ('/Main/{id}', 'newsController@ShowOneNews')->name('News-One');

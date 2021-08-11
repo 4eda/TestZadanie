@@ -13,11 +13,56 @@
     <hr>
     @endforeach
 </div>
-<div class=col>
-
-{{$data->links()}} 
+<div class="custom-pagination-brand-blue">{{$data->links()}}</div>
+    
+<div class="custom-pagination-brand-black">{{$data->links('vendor.pagination.simple-bootstrap-4')}}</div> 
 
 
 
 
 @endsection
+
+
+
+<style>
+    .custom-pagination-brand-blue>.pagination>li>.page-link
+{
+    color: rgb(0, 0, 0)
+}
+.custom-pagination-brand-blue>.pagination>li.active>.page-link {
+    background: rgb(156, 4, 42);
+    border-color: rgb(156, 4, 42);
+    color: rgb(250, 248, 248);
+}
+
+.custom-pagination-brand-black {
+display: none;
+}
+
+@media (max-width: 720px) {
+  
+  
+  
+.custom-pagination-brand-black {
+display: block;
+}
+.custom-pagination-brand-black>.pagination>li>.page-link
+{
+    color: rgb(0, 0, 0)
+}
+.custom-pagination-brand-black>.pagination>li.active>.page-link {
+    background: rgb(156, 4, 42);
+    border-color: rgb(156, 4, 42);
+    color: rgb(250, 248, 248);
+}
+    
+
+.custom-pagination-brand-blue {
+        display: none;
+    }
+    
+}
+    
+</style>
+
+

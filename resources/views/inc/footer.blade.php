@@ -1,4 +1,5 @@
 <footer class="pt-3 my-md-5 pt-md-5 border-top">
+  <div class="align-self-center">
     <div class="text-center">
     <div class="row">
       <div class="col-6 col-md">
@@ -6,4 +7,5 @@
       </div>
     </div>
     </div>
+  </div>
   </footer>
